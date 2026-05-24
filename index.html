@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LumiDisplay — Commercial Display B2B Manufacturer</title>
+<meta name="description" content="Professional commercial display manufacturer. LED screens, digital signage, video walls. WhatsApp for B2B pricing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080C14;--bg2:#0D1420;--bg3:#111C2E;--border:#1A2A44;--orange:#F97316;--orange2:#EA6000;--blue:#3B82F6;--text:#CBD5E1;--muted:#475569;--white:#F1F5F9;--wa:#25D366;--max:1200px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+/* NAV */
+nav{position:sticky;top:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:0 5%;height:64px;background:rgba(8,12,20,.96);border-bottom:1px solid var(--border);backdrop-filter:blur(10px)}
+.logo{font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:700;color:var(--orange);letter-spacing:.05em}
+.logo span{color:var(--white)}
+.nav-links{list-style:none;display:flex;gap:2rem;align-items:center}
+.nav-links a{font-size:.85rem;color:var(--muted);letter-spacing:.03em;transition:color .2s}
+.nav-links a:hover{color:var(--white)}
+.btn-wa{background:var(--wa);color:#fff;font-weight:600;font-size:.82rem;padding:.5rem 1.3rem;transition:opacity .2s}
+.btn-wa:hover{opacity:.88}
+/* HERO */
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;background:var(--bg);overflow:hidden;padding:0 5%}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 70% 50%,rgba(59,130,246,.07) 0%,transparent 70%)}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:60px 60px;opacity:.25}
+.hero-content{position:relative;z-index:1;max-width:640px}
+.hero-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(249,115,22,.1);border:1px solid rgba(249,115,22,.25);color:var(--orange);font-size:.72rem;letter-spacing:.1em;padding:.28rem .8rem;margin-bottom:1.5rem}
+.hero h1{font-family:'Barlow Condensed',sans-serif;font-size:clamp(2.5rem,6vw,4.5rem);font-weight:700;line-height:1.05;color:var(--white);margin-bottom:1.2rem}
+.hero h1 em{color:var(--orange);font-style:normal}
+.hero-sub{font-size:.95rem;color:var(--muted);line-height:1.8;margin-bottom:2rem;max-width:520px}
+.hbtns{display:flex;gap:1rem;flex-wrap:wrap}
+.bp{display:inline-flex;align-items:center;gap:.5rem;background:var(--wa);color:#fff;font-weight:600;font-size:.9rem;padding:.8rem 1.8rem;transition:opacity .2s}
+.bp:hover{opacity:.88}
+.bg{display:inline-block;border:1px solid var(--border);color:var(--text);font-size:.88rem;padding:.8rem 1.6rem;transition:all .2s}
+.bg:hover{border-color:var(--orange);color:var(--orange)}
+.hstats{display:flex;gap:2.5rem;margin-top:2.8rem;flex-wrap:wrap}
+.snum{font-family:'Barlow Condensed',sans-serif;font-size:1.8rem;font-weight:700;color:var(--orange);line-height:1}
+.slbl{font-size:.72rem;color:var(--muted);letter-spacing:.06em;margin-top:3px}
+/* PRODUCTS */
+.sec{max-width:var(--max);margin:0 auto;padding:5rem 5%}
+.stag{font-size:.72rem;color:var(--orange);letter-spacing:.18em;margin-bottom:.5rem}
+.stitle{font-family:'Barlow Condensed',sans-serif;font-size:clamp(1.6rem,3vw,2.2rem);font-weight:700;color:var(--white);margin-bottom:2.5rem}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem}
+.pc{background:var(--bg2);border:1px solid var(--border);transition:border-color .2s,transform .2s}
+.pc:hover{border-color:var(--orange);transform:translateY(-4px)}
+.pimg{width:100%;height:200px;background:var(--bg3);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.pimg svg{width:64px;height:64px;opacity:.15}
+.pimg .plabel{position:absolute;top:.7rem;left:.7rem;background:var(--orange);color:#fff;font-size:.65rem;font-weight:600;letter-spacing:.08em;padding:.2rem .55rem}
+.pinfo{padding:1.3rem}
+.pname{font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:700;color:var(--white);margin-bottom:.4rem}
+.pspec{font-size:.78rem;color:var(--muted);line-height:1.7;margin-bottom:1rem}
+.pqbtn{display:block;text-align:center;background:var(--wa);color:#fff;font-weight:600;font-size:.82rem;padding:.6rem;transition:opacity .2s}
+.pqbtn:hover{opacity:.88}
+/* APPS */
+.div{height:1px;background:linear-gradient(90deg,transparent,var(--border),transparent);margin:0 5%}
+.agrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1rem}
+.ac{background:var(--bg2);border:1px solid var(--border);padding:1.5rem 1rem;text-align:center;transition:border-color .2s}
+.ac:hover{border-color:var(--blue)}
+.ac-icon{font-size:2rem;margin-bottom:.6rem}
+.ac-name{font-family:'Barlow Condensed',sans-serif;font-size:.9rem;font-weight:600;color:var(--white);letter-spacing:.04em}
+/* WHY */
+.wgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem}
+.wc{background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--orange);padding:1.4rem}
+.wnum{font-family:'Barlow Condensed',sans-serif;font-size:2rem;font-weight:700;color:var(--orange);opacity:.2;line-height:1}
+.wtitle{font-size:.92rem;color:var(--white);font-weight:600;margin:.4rem 0}
+.wdesc{font-size:.8rem;color:var(--muted);line-height:1.65}
+/* CONTACT */
+.ctasec{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:4rem 5%;text-align:center}
+.ctainner{max-width:600px;margin:0 auto}
+.ctasub{color:var(--muted);font-size:.92rem;margin-bottom:2rem;line-height:1.8}
+.ctabtns{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap}
+.bwa2{display:inline-flex;align-items:center;gap:.6rem;background:var(--wa);color:#fff;font-weight:700;font-size:.9rem;padding:.85rem 2rem;transition:opacity .2s}
+.bwa2:hover{opacity:.88}
+.bem{display:inline-block;border:1px solid var(--orange);color:var(--orange);font-size:.9rem;padding:.85rem 2rem;transition:all .2s}
+.bem:hover{background:var(--orange);color:#fff}
+/* FOOTER */
+footer{padding:2.5rem 5%;border-top:1px solid var(--border);text-align:center}
+.flogo{font-family:'Barlow Condensed',sans-serif;font-size:1.3rem;font-weight:700;color:var(--orange);margin-bottom:.6rem}
+.flogo span{color:var(--white)}
+.fcopy{font-size:.78rem;color:var(--muted)}
+/* WA FLOAT */
+.waf{position:fixed;bottom:2rem;right:2rem;width:58px;height:58px;background:var(--wa);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,.35);z-index:999;transition:transform .2s}
+.waf:hover{transform:scale(1.1)}
+@media(max-width:768px){.nav-links{display:none}.hstats{gap:1.5rem}.wgrid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">Lumi<span>Display</span></div>
+  <ul class="nav-links">
+    <li><a href="#products">Products</a></li>
+    <li><a href="#applications">Applications</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="https://wa.me/YOUR_NUMBER?text=Hello%2C+I'm+interested+in+commercial+displays" class="btn-wa" target="_blank">💬 WhatsApp</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-badge">B2B COMMERCIAL DISPLAY MANUFACTURER</div>
+    <h1>Professional<br><em>Display Solutions</em><br>Factory Direct</h1>
+    <p class="hero-sub">LED screens, digital signage, video walls and meeting displays — sourced directly from our factory. WhatsApp us for real-time pricing and availability. Offline T/T payment.</p>
+    <div class="hbtns">
+      <a href="https://wa.me/YOUR_NUMBER?text=Hello%2C+I'd+like+to+get+a+quote+for+commercial+displays" class="bp" target="_blank">
+        <svg width="18" height="18" viewBox="0 0 32 32" fill="white"><path d="M16 0C7.164 0 0 7.163 0 16c0 2.822.736 5.469 2.018 7.773L0 32l8.418-2.207A15.93 15.93 0 0016 32c8.836 0 16-7.163 16-16S24.836 0 16 0zm8.078 22.418c-.336.943-1.965 1.805-2.703 1.918-.691.105-1.559.15-2.514-.158-.578-.188-1.32-.438-2.268-.857-3.992-1.723-6.602-5.73-6.801-5.994-.199-.264-1.625-2.162-1.625-4.125s1.027-2.926 1.393-3.328c.363-.402.793-.502 1.059-.502.264 0 .527.002.758.014.242.012.568-.092.889.678.336.801 1.143 2.764 1.242 2.963.1.199.166.43.033.693-.133.264-.199.43-.398.662-.199.232-.418.519-.596.697-.199.199-.406.414-.175.812.232.398 1.031 1.699 2.213 2.748 1.52 1.355 2.801 1.773 3.199 1.973.398.199.629.166.861-.1.232-.264.994-1.162 1.26-1.561.264-.398.527-.332.889-.199.363.133 2.309 1.09 2.707 1.287.398.199.662.299.762.465.1.166.1.963-.236 1.906z"/></svg>
+        Chat on WhatsApp
+      </a>
+      <a href="#products" class="bg">View Products →</a>
+    </div>
+    <div class="hstats">
+      <div><div class="snum">500+</div><div class="slbl">PROJECTS DELIVERED</div></div>
+      <div><div class="snum">7–15</div><div class="slbl">DAYS LEAD TIME</div></div>
+      <div><div class="snum">MOQ 1</div><div class="slbl">UNIT ACCEPTED</div></div>
+      <div><div class="snum">OEM</div><div class="slbl">CUSTOM BRANDING</div></div>
+    </div>
+  </div>
+</section>
+
+<div class="div"></div>
+
+<!-- PRODUCTS -->
+<section class="sec" id="products">
+  <div class="stag">// PRODUCT LINE</div>
+  <div class="stitle">Our Commercial Display Range</div>
+  <div class="pgrid">
+
+    <div class="pc">
+      <div class="pimg">
+        <svg viewBox="0 0 64 64" fill="none" stroke="#F97316" stroke-width="1.5"><rect x="4" y="8" width="56" height="36" rx="2"/><line x1="24" y1="44" x2="20" y2="56"/><line x1="40" y1="44" x2="44" y2="56"/><line x1="16" y1="56" x2="48" y2="56"/></svg>
+        <span class="plabel">BESTSELLER</span>
+      </div>
+      <div class="pinfo">
+        <div class="pname">Indoor LED Display</div>
+        <div class="pspec">Pixel Pitch: P1.5 / P2 / P2.5<br>Resolution: HD / FHD / 4K<br>Brightness: 800–1500 nits<br>Sizes: Custom panel assembly</div>
+        <a href="https://wa.me/YOUR_NUMBER?text=I'm+interested+in+Indoor+LED+Display" class="pqbtn" target="_blank">💬 Get Quote via WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="pc">
+      <div class="pimg">
+        <svg viewBox="0 0 64 64" fill="none" stroke="#F97316" stroke-width="1.5"><rect x="4" y="4" width="56" height="40" rx="2"/><rect x="8" y="8" width="48" height="32"/><line x1="28" y1="44" x2="28" y2="60"/><line x1="36" y1="44" x2="36" y2="60"/></svg>
+        <span class="plabel">OUTDOOR</span>
+      </div>
+      <div class="pinfo">
+        <div class="pname">Outdoor LED Display</div>
+        <div class="pspec">IP65 Waterproof · High Brightness<br>Pixel Pitch: P4 / P5 / P6 / P8 / P10<br>Brightness: 5000–8000 nits<br>Front / Rear service available</div>
+        <a href="https://wa.me/YOUR_NUMBER?text=I'm+interested+in+Outdoor+LED+Display" class="pqbtn" target="_blank">💬 Get Quote via WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="pc">
+      <div class="pimg">
+        <svg viewBox="0 0 64 64" fill="none" stroke="#F97316" stroke-width="1.5"><rect x="2" y="8" width="28" height="48" rx="1"/><rect x="34" y="8" width="28" height="48" rx="1"/><line x1="30" y1="16" x2="34" y2="16"/><line x1="30" y1="32" x2="34" y2="32"/><line x1="30" y1="48" x2="34" y2="48"/></svg>
+        <span class="plabel">NARROW BEZEL</span>
+      </div>
+      <div class="pinfo">
+        <div class="pname">LCD Video Wall</div>
+        <div class="pspec">Bezel: 3.5mm / 1.8mm / 0.88mm<br>Sizes: 46" / 49" / 55"<br>Brightness: 500–700 nits<br>24/7 operation rated</div>
+        <a href="https://wa.me/YOUR_NUMBER?text=I'm+interested+in+LCD+Video+Wall" class="pqbtn" target="_blank">💬 Get Quote via WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="pc">
+      <div class="pimg">
+        <svg viewBox="0 0 64 64" fill="none" stroke="#F97316" stroke-width="1.5"><rect x="8" y="12" width="48" height="32" rx="2"/><circle cx="32" cy="28" r="6"/><line x1="20" y1="44" x2="20" y2="56"/><line x1="44" y1="44" x2="44" y2="56"/></svg>
+        <span class="plabel">4K ANDROID</span>
+      </div>
+      <div class="pinfo">
+        <div class="pname">Digital Signage Display</div>
+        <div class="pspec">OS: Android 11 / Windows optional<br>Resolution: 4K UHD<br>Sizes: 32" / 43" / 55" / 65" / 75" / 86"<br>Built-in media player</div>
+        <a href="https://wa.me/YOUR_NUMBER?text=I'm+interested+in+Digital+Signage" class="pqbtn" target="_blank">💬 Get Quote via WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="pc">
+      <div class="pimg">
+        <svg viewBox="0 0 64 64" fill="none" stroke="#F97316" stroke-width="1.5"><rect x="4" y="16" width="56" height="36" rx="2"/><circle cx="32" cy="34" r="8"/><line x1="4" y1="24" x2="60" y2="24"/></svg>
+        <span class="plabel">INTERACTIVE</span>
+      </div>
+      <div class="pinfo">
+        <div class="pname">Interactive Flat Panel</div>
+        <div class="pspec">Touch: 20-point multi-touch<br>Sizes: 65" / 75" / 86" / 98"<br>4K · Android + Windows dual OS<br>For conference rooms &amp; education</div>
+        <a href="https://wa.me/YOUR_NUMBER?text=I'm+interested+in+Interactive+Flat+Panel" class="pqbtn" target="_blank">💬 Get Quote via WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="pc">
+      <div class="pimg">
+        <svg viewBox="0 0 64 64" fill="none" stroke="#F97316" stroke-width="1.5"><rect x="20" y="4" width="24" height="56" rx="2"/><line x1="20" y1="16" x2="44" y2="16"/><line x1="20" y1="48" x2="44" y2="48"/><circle cx="32" cy="56" r="3"/></svg>
+        <span class="plabel">PORTRAIT</span>
+      </div>
+      <div class="pinfo">
+        <div class="pname">Freestanding Kiosk</div>
+        <div class="pspec">Portrait: 43" / 55" / 65"<br>Landscape or portrait mount<br>Slim body design · Floor stand<br>Optional touch / payment integration</div>
+        <a href="https://wa.me/YOUR_NUMBER?text=I'm+interested+in+Freestanding+Kiosk" class="pqbtn" target="_blank">💬 Get Quote via WhatsApp</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="div"></div>
+
+<!-- APPLICATIONS -->
+<section class="sec" id="applications">
+  <div class="stag">// APPLICATION SCENARIOS</div>
+  <div class="stitle">Where Our Displays Go</div>
+  <div class="agrid">
+    <div class="ac"><div class="ac-icon">🏬</div><div class="ac-name">RETAIL</div></div>
+    <div class="ac"><div class="ac-icon">🍽️</div><div class="ac-name">RESTAURANT</div></div>
+    <div class="ac"><div class="ac-icon">🏨</div><div class="ac-name">HOSPITALITY</div></div>
+    <div class="ac"><div class="ac-icon">🏟️</div><div class="ac-name">SPORTS VENUE</div></div>
+    <div class="ac"><div class="ac-icon">🚇</div><div class="ac-name">TRANSIT</div></div>
+    <div class="ac"><div class="ac-icon">🏢</div><div class="ac-name">CORPORATE</div></div>
+    <div class="ac"><div class="ac-icon">🏫</div><div class="ac-name">EDUCATION</div></div>
+    <div class="ac"><div class="ac-icon">🏥</div><div class="ac-name">HEALTHCARE</div></div>
+  </div>
+</section>
+
+<div class="div"></div>
+
+<!-- WHY US -->
+<section class="sec" id="about">
+  <div class="stag">// WHY CHOOSE US</div>
+  <div class="stitle">Factory Direct · Zero Middlemen</div>
+  <div class="wgrid">
+    <div class="wc"><div class="wnum">01</div><div class="wtitle">Factory Direct Pricing</div><div class="wdesc">No distributors, no markup. You get manufacturer's price with full quality control.</div></div>
+    <div class="wc"><div class="wnum">02</div><div class="wtitle">WhatsApp Real-Time</div><div class="wdesc">Chat with our sales engineers directly on WhatsApp. Fast response, no ticketing system.</div></div>
+    <div class="wc"><div class="wnum">03</div><div class="wtitle">OEM / Custom Branding</div><div class="wdesc">Custom bezel, logo, OS skin. MOQ as low as 1 unit for most models.</div></div>
+    <div class="wc"><div class="wnum">04</div><div class="wtitle">CE · RoHS · ISO 9001</div><div class="wdesc">Full certification package included. Test reports and compliance docs on request.</div></div>
+  </div>
+</section>
+
+<!-- CONTACT CTA -->
+<div class="ctasec">
+  <div class="ctainner">
+    <div class="stag" style="margin-bottom:.5rem">// CONTACT</div>
+    <div class="stitle" style="margin-bottom:1rem">Ready to Get a Quote?</div>
+    <p class="ctasub">Tell us your screen size, quantity, and use case — we'll send you specs and pricing within 2 hours. Payment via T/T bank transfer.</p>
+    <div class="ctabtns">
+      <a href="https://wa.me/YOUR_NUMBER?text=Hello%2C+I'd+like+a+quote+for+commercial+displays.+My+requirement+is:" class="bwa2" target="_blank">
+        <svg width="20" height="20" viewBox="0 0 32 32" fill="white"><path d="M16 0C7.164 0 0 7.163 0 16c0 2.822.736 5.469 2.018 7.773L0 32l8.418-2.207A15.93 15.93 0 0016 32c8.836 0 16-7.163 16-16S24.836 0 16 0zm8.078 22.418c-.336.943-1.965 1.805-2.703 1.918-.691.105-1.559.15-2.514-.158-.578-.188-1.32-.438-2.268-.857-3.992-1.723-6.602-5.73-6.801-5.994-.199-.264-1.625-2.162-1.625-4.125s1.027-2.926 1.393-3.328c.363-.402.793-.502 1.059-.502.264 0 .527.002.758.014.242.012.568-.092.889.678.336.801 1.143 2.764 1.242 2.963.1.199.166.43.033.693-.133.264-.199.43-.398.662-.199.232-.418.519-.596.697-.199.199-.406.414-.175.812.232.398 1.031 1.699 2.213 2.748 1.52 1.355 2.801 1.773 3.199 1.973.398.199.629.166.861-.1.232-.264.994-1.162 1.26-1.561.264-.398.527-.332.889-.199.363.133 2.309 1.09 2.707 1.287.398.199.662.299.762.465.1.166.1.963-.236 1.906z"/></svg>
+        Chat on WhatsApp Now
+      </a>
+      <a href="mailto:YOUR_EMAIL?subject=Commercial%20Display%20Enquiry" class="bem">✉ Send Email</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="flogo">Lumi<span>Display</span></div>
+  <div class="fcopy">© 2026 LumiDisplay · Commercial Display Manufacturer · B2B · Factory Direct · Worldwide</div>
+</footer>
+
+<a href="https://wa.me/YOUR_NUMBER?text=Hello%2C+commercial+display+enquiry" class="waf" target="_blank" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 32 32" fill="white"><path d="M16 0C7.164 0 0 7.163 0 16c0 2.822.736 5.469 2.018 7.773L0 32l8.418-2.207A15.93 15.93 0 0016 32c8.836 0 16-7.163 16-16S24.836 0 16 0zm8.078 22.418c-.336.943-1.965 1.805-2.703 1.918-.691.105-1.559.15-2.514-.158-.578-.188-1.32-.438-2.268-.857-3.992-1.723-6.602-5.73-6.801-5.994-.199-.264-1.625-2.162-1.625-4.125s1.027-2.926 1.393-3.328c.363-.402.793-.502 1.059-.502.264 0 .527.002.758.014.242.012.568-.092.889.678.336.801 1.143 2.764 1.242 2.963.1.199.166.43.033.693-.133.264-.199.43-.398.662-.199.232-.418.519-.596.697-.199.199-.406.414-.175.812.232.398 1.031 1.699 2.213 2.748 1.52 1.355 2.801 1.773 3.199 1.973.398.199.629.166.861-.1.232-.264.994-1.162 1.26-1.561.264-.398.527-.332.889-.199.363.133 2.309 1.09 2.707 1.287.398.199.662.299.762.465.1.166.1.963-.236 1.906z"/></svg>
+</a>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));
+    if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
+  });
+});
+</script>
+</body>
+</html>
